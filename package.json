@@ -1,0 +1,24 @@
+{
+  "name": "devuelve_texto",
+  "version": "0.0.1",
+  "description": "Modelo de envio de datos en formulario con express",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Mocha",
+    "Express",
+    "chai"
+  ],
+  "author": "@dorisjpch",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "express": "^4.16.3",
+    "mocha": "^5.2.0",
+    "pug": "^2.0.3"
+  }
+}

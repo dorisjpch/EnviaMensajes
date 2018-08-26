@@ -1,0 +1,10 @@
+extends index
+block content
+  body
+    div(class="container-fluid")
+      div(class='form-group')
+        label Texto reenviado del servidor
+        -if (lista.length)
+          ul(class="alert alert-danger")
+            -for (i in lista)
+              P #{lista[i].mensaje}

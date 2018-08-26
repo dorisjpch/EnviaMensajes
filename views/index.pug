@@ -1,0 +1,23 @@
+doctype html
+html(lang="es")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content= "width=device-width, user-scalable=no, initial-scale=1, maximun-scale=1, minimum-scale=1")
+    link(rel= "stylesheet", href="/css/bootstrap.css")
+  body
+    div(class='container')
+      div(class='row')
+        div(class='col-lg-8')
+          h1(class= "page-header")= 'CAJA DE ENVIO DE TEXTO ENTRE EL USUARIO Y EL SERVIDOR'
+          div(class="panel panel-primary")
+            div(class="panel-heading")= 'Sistema de envío de mensajes y respuestas'
+              div(class="panel-body")
+                form(id="send-form" method='POST' action='/')
+                  div(class="form-group")
+                    label(for="sendMessage") 
+                    input(type= "text", name= "sendMessage", id="sendMessage", class="form-control")
+                  div(class="form-group")
+                    input(type="submit", value="Enviar", class='btn btn-default')
+              block content
+      footerdiv(class= 'footer_header')
+        p &copy; 2018 Módulo de envio de mensajes al servidor, Inc.
